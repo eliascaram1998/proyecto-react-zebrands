@@ -1,0 +1,58 @@
+
+.logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+.headerMenu {
+  background-color: #3a3a3a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerMenu p u {
+  font-family: "Times New Roman", Sans-serif;
+  font-size: calc(10px + 2vmin);
+  color: #F1F2F2;
+}
+
+.text-enter {
+  opacity: 0;
+  transform:translateX(-100%);
+}
+
+.text-enter-active {
+  opacity: 1;
+  transform:translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.option-enter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+.option-enter-active {
+  opacity: 1;
+  transform:translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 768px) { 
+  .containerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+

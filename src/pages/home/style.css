@@ -1,0 +1,46 @@
+.infoContainer {
+  text-align: center;
+}
+
+.logo {
+  height: 30vmin !important;
+  pointer-events: none;
+}
+
+.header {
+  background-color: #3a3a3a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Sans-serif;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #F1F2F2;
+}
+
+.welcome {
+  margin-top: -15px;
+}
+
+.example-enter {
+  opacity: 0;
+  transform:translateY(-100%);
+}
+.example-enter-active {
+  opacity: 1;
+  transform:translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.text-enter {
+  opacity: 0;
+  transform:translateX(-100%);
+}
+.text-enter-active {
+  opacity: 1;
+  transform:translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
